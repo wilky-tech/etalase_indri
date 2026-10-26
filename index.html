@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indri - Etalase</title>
+
+  <!-- Google Fonts: Inter, Playfair Display, & Alex Brush -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- File CSS Eksternal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar Utama -->
+  <header class="main-header">
+    <div class="container navbar-container">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo">
+        Indri <span class="heart-symbol">♡</span>
+      </a>
+
+      <!-- Menu Navigasi Desktop -->
+      <nav class="desktop-nav">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#bestsellers" class="nav-link">Collections</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Tombol Hamburger Mobile -->
+      <div class="nav-actions">
+        <button class="mobile-menu-btn" id="toggleMobileMenu" aria-label="Buka Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Menu Dropdown Mobile -->
+    <div class="mobile-dropdown" id="mobileMenu">
+      <a href="#" class="mobile-nav-link active">Home</a>
+      <a href="#bestsellers" class="mobile-nav-link">Collections</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="about">
+    <div class="container hero-grid">
+      
+      <!-- Teks Kiri -->
+      <div class="hero-content">
+        <span class="hero-subheading">Etalase</span>
+        <h1 class="hero-title">
+          Indri <br />
+          <span class="script-accent">Our Priority ♡</span>
+        </h1>
+        <p class="hero-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugiat dolor vel dolore explicabo sint!
+        </p>
+      </div>
+
+      <!-- Gambar Kanan -->
+      <div class="hero-image-wrapper">
+        <img 
+          src="/img/foto2.jpeg" 
+          alt="Indri Hero Image"
+          class="hero-img" 
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section categories-section" id="categories">
+    <div class="container">
+      <div class="categories-grid">
+
+        <div class="category-item">
+          <div class="cat-circle">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=400&auto=format&fit=crop" alt="Kategori 1" />
+          </div>
+          <h3 class="cat-title">Kategori 1</h3>
+          <a href="#" class="cat-link">View →</a>
+        </div>
+
+        <div class="category-item">
+          <div class="cat-circle">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=400&auto=format&fit=crop" alt="Kategori 2" />
+          </div>
+          <h3 class="cat-title">Kategori 2</h3>
+          <a href="#" class="cat-link">View →</a>
+        </div>
+
+        <div class="category-item">
+          <div class="cat-circle">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=400&auto=format&fit=crop" alt="Kategori 3" />
+          </div>
+          <h3 class="cat-title">Kategori 3</h3>
+          <a href="#" class="cat-link">View →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner Sorotan: Free Pilihan (Style Baru) -->
+  <section class="highlight-banner-section">
+    <div class="container">
+      <div class="highlight-badge-box">
+        <div class="sparkle-icon"><i class="fa-solid fa-sparkles"></i></div>
+        <div class="highlight-text-wrap">
+          <span class="highlight-subtitle">PENAWARAN SPESIAL</span>
+          <h4 class="highlight-title">✨ Free Pilihan ✨</h4>
+        </div>
+        <div class="sparkle-icon"><i class="fa-solid fa-gem"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers Section -->
+  <section class="section bestsellers-section" id="bestsellers">
+    <div class="container">
+      
+      <div class="section-header">
+        <div>
+          <span class="section-script">My Etalase ♡</span>
+          <h2 class="section-title">Best Sellers</h2>
+        </div>
+      </div>
+
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=500&auto=format&fit=crop" alt="Produk 1" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Judul</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(124)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=500&auto=format&fit=crop" alt="Produk 2" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Judul</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(124)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=500&auto=format&fit=crop" alt="Produk 3" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Judul</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(124)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=500&auto=format&fit=crop" alt="Produk 4" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Judul</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(124)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Banners (Split Grid) -->
+  <section class="section promo-section">
+    <div class="container promo-grid">
+      
+      <div class="promo-card promo-pink">
+        <div class="promo-text">
+          <h3 class="promo-title">Judul</h3>
+          <p class="promo-desc">Deskripsi</p>
+          <a href="#" class="btn btn-secondary">View →</a>
+        </div>
+        <div class="promo-image">
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=500&auto=format&fit=crop" alt="Banner 1" />
+        </div>
+      </div>
+
+      <div class="promo-card promo-cream">
+        <div class="promo-text">
+          <h3 class="promo-title">Judul</h3>
+          <p class="promo-desc">Deskripsi</p>
+          <a href="#" class="btn btn-secondary">View →</a>
+        </div>
+        <div class="promo-image">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=500&auto=format&fit=crop" alt="Banner 2" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section">
+    <div class="container newsletter-content">
+      <div class="newsletter-decor-heart">♡</div>
+      <span class="newsletter-script">Stay here ♡</span>
+      <p class="newsletter-sub">Be the first to know about new arrivals, exclusive offers and beauty tips!</p>
+      
+      <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit" class="newsletter-btn">Subscribe →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer" id="contact">
+    <div class="container footer-grid">
+      
+      <div class="footer-col">
+        <a href="#" class="brand-logo footer-logo">
+          Indri <span class="heart-symbol">♡</span>
+          <span class="brand-tagline">Etalase</span>
+        </a>
+        <p class="footer-about">
+          Your one-stop destination for luxurious skincare, flawless makeup, and self-care essentials.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#bestsellers">Best Sellers</a></li>
+          <li><a href="#">Offers & Discounts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Follow Me</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Wilky Tech. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- File JavaScript Eksternal -->
+  <script src="script.js"></script>
+</body>
+</html>
