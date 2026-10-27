@@ -81,7 +81,7 @@
     </div>
   </section>
 
-  <!-- Categories Section -->
+ <!-- Categories Section -->
   <section class="section categories-section" id="categories">
     <div class="container">
       <div class="categories-grid">
@@ -91,7 +91,8 @@
             <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=400&auto=format&fit=crop" alt="Kategori 1" />
           </div>
           <h3 class="cat-title">Kategori 1</h3>
-          <a href="#" class="cat-link">View →</a>
+          <!-- Ditambahkan class cat-btn dan data-category -->
+          <button class="cat-link cat-btn active" data-category="1">View →</button>
         </div>
 
         <div class="category-item">
@@ -99,7 +100,7 @@
             <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=400&auto=format&fit=crop" alt="Kategori 2" />
           </div>
           <h3 class="cat-title">Kategori 2</h3>
-          <a href="#" class="cat-link">View →</a>
+          <button class="cat-link cat-btn" data-category="2">View →</button>
         </div>
 
         <div class="category-item">
@@ -107,14 +108,14 @@
             <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=400&auto=format&fit=crop" alt="Kategori 3" />
           </div>
           <h3 class="cat-title">Kategori 3</h3>
-          <a href="#" class="cat-link">View →</a>
+          <button class="cat-link cat-btn" data-category="3">View →</button>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Banner Sorotan: Free Pilihan (Style Baru) -->
+  <!-- Banner Sorotan: Free Pilihan -->
   <section class="highlight-banner-section">
     <div class="container">
       <div class="highlight-badge-box">
@@ -135,18 +136,20 @@
       <div class="section-header">
         <div>
           <span class="section-script">My Etalase ♡</span>
-          <h2 class="section-title">Best Sellers</h2>
+          <!-- Ditambahkan id agar teks judul etalase berubah otomatis -->
+          <h2 class="section-title" id="etalaseTitle">Etalase Kategori 1</h2>
         </div>
       </div>
 
       <div class="products-grid">
 
-        <div class="product-card">
+        <!-- Produk Kategori 1 -->
+        <div class="product-card" data-category="1">
           <div class="product-img-box">
             <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=500&auto=format&fit=crop" alt="Produk 1" />
           </div>
           <div class="product-info">
-            <h3 class="product-name">Judul</h3>
+            <h3 class="product-name">Produk Kat 1 (Item A)</h3>
             <div class="product-rating">
               <span class="stars">★★★★★</span>
               <span class="rating-count">(124)</span>
@@ -154,75 +157,74 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card" data-category="1">
           <div class="product-img-box">
-            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=500&auto=format&fit=crop" alt="Produk 2" />
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=500&auto=format&fit=crop" alt="Produk 2" />
           </div>
           <div class="product-info">
-            <h3 class="product-name">Judul</h3>
+            <h3 class="product-name">Produk Kat 1 (Item B)</h3>
             <div class="product-rating">
               <span class="stars">★★★★★</span>
-              <span class="rating-count">(124)</span>
+              <span class="rating-count">(98)</span>
             </div>
           </div>
         </div>
 
-        <div class="product-card">
+        <!-- Produk Kategori 2 -->
+        <div class="product-card" data-category="2">
           <div class="product-img-box">
-            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=500&auto=format&fit=crop" alt="Produk 3" />
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=500&auto=format&fit=crop" alt="Produk 3" />
           </div>
           <div class="product-info">
-            <h3 class="product-name">Judul</h3>
+            <h3 class="product-name">Produk Kat 2 (Item A)</h3>
             <div class="product-rating">
               <span class="stars">★★★★★</span>
-              <span class="rating-count">(124)</span>
+              <span class="rating-count">(85)</span>
             </div>
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card" data-category="2">
           <div class="product-img-box">
-            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=500&auto=format&fit=crop" alt="Produk 4" />
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=500&auto=format&fit=crop" alt="Produk 4" />
           </div>
           <div class="product-info">
-            <h3 class="product-name">Judul</h3>
+            <h3 class="product-name">Produk Kat 2 (Item B)</h3>
             <div class="product-rating">
               <span class="stars">★★★★★</span>
-              <span class="rating-count">(124)</span>
+              <span class="rating-count">(64)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk Kategori 3 -->
+        <div class="product-card" data-category="3">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=500&auto=format&fit=crop" alt="Produk 5" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Produk Kat 3 (Item A)</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(112)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="3">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?q=80&w=500&auto=format&fit=crop" alt="Produk 6" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Produk Kat 3 (Item B)</h3>
+            <div class="product-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(77)</span>
             </div>
           </div>
         </div>
 
       </div>
-    </div>
-  </section>
-
-  <!-- Promo Banners (Split Grid) -->
-  <section class="section promo-section">
-    <div class="container promo-grid">
-      
-      <div class="promo-card promo-pink">
-        <div class="promo-text">
-          <h3 class="promo-title">Judul</h3>
-          <p class="promo-desc">Deskripsi</p>
-          <a href="#" class="btn btn-secondary">View →</a>
-        </div>
-        <div class="promo-image">
-          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=500&auto=format&fit=crop" alt="Banner 1" />
-        </div>
-      </div>
-
-      <div class="promo-card promo-cream">
-        <div class="promo-text">
-          <h3 class="promo-title">Judul</h3>
-          <p class="promo-desc">Deskripsi</p>
-          <a href="#" class="btn btn-secondary">View →</a>
-        </div>
-        <div class="promo-image">
-          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=500&auto=format&fit=crop" alt="Banner 2" />
-        </div>
-      </div>
-
     </div>
   </section>
 
